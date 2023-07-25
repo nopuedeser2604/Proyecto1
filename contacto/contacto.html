@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icono oasis.ico" type="image/x-icon">
+    <title>Contacto</title>
+
+    <style>
+      body {
+          font-family: "Lucida Console", "Courier New", monospace;
+          background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+          padding: 0;
+          margin: 0;
+      }
+
+      header {
+          text-align: center;
+      }
+
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+          background-color: #111;
+          background-color: darkkhaki;
+          color: black;
+          transition: 1s all;
+      }
+
+      .active {
+          background-color: lightseagreen;
+      }
+
+      h1 {
+          font-weight: bold;
+          background: linear-gradient(to right, black, white,black);
+          /* background: linear-gradient(to right, darkred, darkblue,darkred ); */
+          padding: 10px;
+          margin: 0;
+          color: black;
+      }
+
+      input[type=text],
+      input[type=email],
+      textarea,
+      select {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: flex;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+
+      input[type=submit] {
+          width: 50%;
+          background-color: black;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: 1s all;
+          display: block;    
+          
+      }
+
+      input[type=submit]:hover {
+          background-color: #777;
+      }
+
+      div.contenedor-formulario {
+          border-radius: 10px;
+          background-color: #f2f2f2;
+          padding: 20px;
+          
+      }
+      .footer {
+          background-color: black;
+          color: #FFF;
+          padding: 10px;
+          text-align: center;
+          clear: both;
+      }
+
+      .audio1{
+        width: 20%;
+      }
+
+      .logoOasis{
+        width: 300px;
+        padding: 0 300px;
+      }
+
+      .copyright{
+        font-size: 15px;
+        padding-bottom: 20px;
+      }
+  </style>
+
+</head>
+<body>
+    <header>
+      <h1>Oasis - Live Forever</h1>
+        <nav>
+          <ul>  
+            <li><a href="../index.html">Biografia</a></li>
+            <li><a href="../discografia/discografia.html">Discografia</a></li>
+            <li><a href="../audiovisual/audiovisual.html">Audiovisual</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedor-formulario">
+        <form>
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" placeholder="Tu nombre Aqui!" required minlength="4">
+          <label for="Apellido">Apellido: </label>
+          <input type="text" name="Apellido" id="Apellido" placeholder="Tu apellido Aqui!" required minlength="4">
+          <label for="mail">Email</label>
+          <input type="email" name="mail" id="mail" placeholder="Tu email Aqui!" required>
+          <label for="pais">Pais</label>
+          <select name="pais" id="pais" required>
+            <option value="Perú">Perú</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chile">Chile</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Uruguay">Uruguay</option>
+          </select>
+
+          <label for="comentario">Comentario: </label>
+          <textarea name="comentario" id="comentario" cols="60" rows="10" placeholder="Aqui tu comentario..." required></textarea>
+          <p>Motivos de contacto: </p>
+          <label for="motivo">Soy re fan de Oasis </label>
+          <input type="radio" name="motivo" id="motivo">
+          <label for="comprar">Quiero comprar</label>
+          <input type="radio" name="motivo" id="comprar">
+          <label for="informacion">Tener solo información</label>
+          <input type="radio" name="motivo" id="informacion">
+          <label for="curiosidad">Curiosidad</label>
+          <input type="radio" name="motivo" id="curiosidad">
+
+          <input type="submit">
+
+        </form>
+
+      </div>
+
+      <footer class="footer">
+        <img class="logoOasis" src="../Imagenes, Videos e icono/imagenes de oasis/footer final.png" alt="logo oasis">
+        <p class="copyright">Derechos de autor &copy; 2023</p>
+        <audio class="audio1" src="../Imagenes, Videos e icono/Audio/Oasis - Headshrinker.mp3" controls></audio>
+      </footer>
+
+
+</body>
+</html>
